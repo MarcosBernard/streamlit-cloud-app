@@ -7,3 +7,4 @@ y = np.sin(x)
 
 plt.figure(figsize=(12,8))
 plt.plot(x,y,'-')
+plt.show()
