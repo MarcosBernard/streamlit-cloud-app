@@ -1,9 +1,11 @@
-import streamlit as st
 import matplotlib.pyplot as plt
-import numpy as np
+import mpld3
+import streamlit.components.v1 as components
 
+
+#create your figure and get the figure object returned
 fig = plt.figure(figsize=(12,8))
-
 plt.plot([1,2,3,4,5])
 
-st.pyplot(fig)
+fig_html = mpld3.fig_to_html(fig)
+components.html(fig_html, height=600)
