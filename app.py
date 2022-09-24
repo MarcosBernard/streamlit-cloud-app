@@ -1,10 +1,9 @@
-import numpy as np
+import streamlit as st
 import matplotlib.pyplot as plt
+import numpy as np
 
-x = np.linspace(1,20,100)
-y = np.sin(x)
+fig = plt.figure(figsize=(12,8))
 
+plt.plot([1,2,3,4,5])
 
-plt.figure(figsize=(12,8))
-plt.plot(x,y,'-')
-plt.show()
+st.pyplot(fig)
